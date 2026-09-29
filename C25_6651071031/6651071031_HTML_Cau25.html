@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Câu 25 - Thực đơn tính tiền</title>
+	</head>
+    
+	<body>
+		<form>
+			<h2>THỰC ĐƠN</h2>
+			<table border="1" cellpadding="8" cellspacing="0">
+				<tr align="center">
+					<th>Thức ăn</th>
+					<th>Nước uống</th>
+					<th>Thời điểm</th>
+				</tr>
+				<tr valign="top">
+					<td>
+						<select id="foods" multiple size="7" style="width: 130px;">
+							<option value="20000">Bún bò</option>
+							<option value="18000">Hủ tiếu</option>
+							<option value="17000">Bánh canh</option>
+							<option value="19000">Phở bò</option>
+							<option value="15000">Nuôi</option>
+							<option value="12000">Bánh mì thịt</option>
+							<option value="15000">Bánh cuốn</option>
+						</select>
+					</td>
+					<td>
+						<select id="drinks" multiple size="7" style="width: 130px;">
+							<option value="12000">Cà phê đá</option>
+							<option value="15000">Cà phê sữa</option>
+							<option value="13000">Chanh dây</option>
+							<option value="12000">Chanh muối</option>
+							<option value="14000">Xí muội</option>
+							<option value="13000">Sữa tươi</option>
+							<option value="17000">Cam vắt</option>
+						</select>
+					</td>
+					<td>
+						<input type="radio" name="time" id="day" value="day" checked> Ban ngày<br>
+						<input type="radio" name="time" id="night" value="night"> Ban đêm
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						<input type="button" value="Tính tiền" onclick="tinhTien()">
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table border="1" cellpadding="6" cellspacing="0" width="300">
+				<thead>
+					<tr>
+						<th>Các món đã dùng</th>
+						<th>Tiền</th>
+					</tr>
+				</thead>
+				<tbody id="usedItems"></tbody>
+				<tfoot>
+					<tr>
+						<td><b>Tổng tiền</b></td>
+						<td><b id="total">0 đồng</b></td>
+					</tr>
+				</tfoot>
+			</table>
+		</form>
+		<script src="6651071031_JAVASCRIPT_Cau25.js"></script>
+	</body>
+</html>
